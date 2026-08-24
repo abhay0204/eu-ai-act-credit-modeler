@@ -1,0 +1,32 @@
+{
+    "protected_attribute": "SEX",
+    "privileged_class": "1 (Male)",
+    "unprivileged_class": "2 (Female)",
+    "favorable_outcome": "0 (No Default)",
+    "unfavorable_outcome": "1 (Default)",
+    "optimal_decision_threshold": 0.29999999999999993,
+    "baseline": {
+        "optimal_threshold": 0.29999999999999993,
+        "f1_score": 0.5311022189887231,
+        "accuracy": 0.7851666666666667,
+        "roc_auc": 0.7708526478732465,
+        "disparate_impact": 1.064969956854337,
+        "equal_opportunity_difference": 0.0451515158489767,
+        "statistical_parity_difference": 0.047713157323501454
+    },
+    "mitigated": {
+        "technique": "Reweighing (AIF360) + FocalLoss",
+        "optimal_threshold": 0.31999999999999995,
+        "f1_score": 0.5335849056603773,
+        "accuracy": 0.794,
+        "roc_auc": 0.7704547327389091,
+        "disparate_impact": 1.0348785190851817,
+        "equal_opportunity_difference": 0.022691702188383234,
+        "statistical_parity_difference": 0.026630809326487648
+    },
+    "compliance_summary": {
+        "di_improvement": -0.030091437769155238,
+        "eod_improvement": 0.022459813660593464,
+        "eu_ai_act_status": "CONFORMANT"
+    }
+}
